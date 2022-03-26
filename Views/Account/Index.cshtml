@@ -59,7 +59,8 @@
                     </span>
                 </button>
             </div>
-            <form class="authorization__form" method="post" asp-controller="Account" asp-action="Login">
+            <form class="authorization__form" method="post" asp-controller="Account" asp-action="Login"
+                  asp-route-returnUrl="@Model.ReturnUrl">
                 <div asp-validation-summary="ModelOnly"></div>
                 <div class="authorization__inputs">
                     <div class="authorization__login">
