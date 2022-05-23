@@ -7,11 +7,7 @@
     <projectFile profileName="IIS Express">MyBook.WEB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da68614-2f87-445e-9e0c-eee202f1a51f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Library/Index.cshtml" beforeDir="false" />
-    </list>
+    <list default="true" id="5da68614-2f87-445e-9e0c-eee202f1a51f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
