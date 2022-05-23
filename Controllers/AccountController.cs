@@ -61,14 +61,6 @@ public class AccountController : Controller
                 await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
             if (result.Succeeded)
             {
-                // if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
-                // {
-                //     return Redirect(model.ReturnUrl);
-                // }
-                // else
-                // {
-                //     return RedirectToAction("Privacy", "Home");
-                // }
                 return RedirectToAction("Login", "Account");
             }
             else
@@ -84,18 +76,12 @@ public class AccountController : Controller
     {
         return View();
     }
- 
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Logout()
     {
-        // удаляем аутентификационные куки
         await _signInManager.SignOutAsync();
         return RedirectToAction("Index", "Home");
-    }
-
-    public IActionResult Index()
-    {
-        return View();
     }
 }

@@ -15,7 +15,7 @@
             </div>
             <div class="nav__links">
                 <div><a href="">Что выбрать</a></div>
-                <div><a href="">Библиотека</a></div>
+                <div><a asp-controller="Library" asp-action="Index">Библиотека</a></div>
                 <div><a href="">Подписка</a></div>
             </div>
             <div class="nav__btn-login">
@@ -24,10 +24,10 @@
         </nav>
         <menu>
             <div>
-                <a href="" class="menu__link">📖 Книги </a>
+                <a asp-controller="Books" asp-action="Index" class="menu__link">📖 Книги </a>
             </div>
             <div>
-                <a href="" class="menu__link">🎧 Аудиокниги</a>
+                <a asp-controller="Books" asp-action="Audio" class="menu__link">🎧 Аудиокниги</a>
             </div>
             <div>
                 <a href="" class="menu__link">👌 Бесплатные книги</a>
