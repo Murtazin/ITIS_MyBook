@@ -45,23 +45,23 @@ public class AccountController : Controller
         return Ok();
     }
     
-    [HttpGet]
-    public IActionResult Index(string returnUrl = null)
-    {
-        return View(new LoginViewModel { ReturnUrl = returnUrl });
-    }
- 
+    // [HttpGet]
+    // public IActionResult Index(string returnUrl = null)
+    // {
+    //     return View(new LoginViewModel { ReturnUrl = returnUrl });
+    // }
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Login(LoginViewModel model)
     {
         if (ModelState.IsValid)
         {
-            var result = 
+            var result =
                 await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
             if (result.Succeeded)
             {
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Index", "Home");
             }
             else
             {
@@ -70,11 +70,6 @@ public class AccountController : Controller
         }
 
         return Ok();
-    }
-
-    public IActionResult Login()
-    {
-        return View();
     }
 
     [HttpPost]
